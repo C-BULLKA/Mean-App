@@ -1,5 +1,4 @@
-# 📝 Blog MEAN Stack - Piwko Lab 12
-
+# 📝 Blog MEAN Stack
 Nowoczesna aplikacja blogowa zbudowana na stosie technologicznym MEAN (MongoDB, Express, Angular, Node.js) z zaawansowanymi funkcjonalnościami i modernistycznym interfejsem.
 
 ## 🎯 Wymagania
