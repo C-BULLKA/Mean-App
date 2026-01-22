@@ -268,16 +268,6 @@ project-root/
 - Komenty są przechowywane w bazie danych MongoDB
 - CSS Variables umożliwiają łatwe zmianę kolorów
 
-## 👨‍💻 Autor
-
-Projekt stworzony jako część zadania laboratoryjnego Piwko Lab 12.
-
-## 📄 Licencja
-
-MIT License
-
----
-
 **Ostatnia aktualizacja:** 22 stycznia 2026
 
 Miłego testowania! 🚀
