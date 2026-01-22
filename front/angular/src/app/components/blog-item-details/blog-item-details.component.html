@@ -1,0 +1,25 @@
+<div class="container mt-4" style="max-width: 800px;">
+
+    <h2 class="mb-3">{{ title }}</h2>
+
+    <img [src]="image" class="img-fluid mb-3" alt="Obrazek wpisu">
+
+    <div class="mb-3 text-muted">
+        <small>👁️ Wyświetlenia: {{ views }}</small>
+    </div>
+
+    <p style="font-size: 1.2rem;">
+        {{ text }}
+    </p>
+
+    @if (postId) {
+        <div class="d-flex gap-3 mb-3" style="flex-wrap: wrap; align-items: center;">
+            <app-like-button [postId]="postId"></app-like-button>
+            <app-rating [postId]="postId"></app-rating>
+        </div>
+
+        <app-comments-section [postId]="postId"></app-comments-section>
+    }
+
+    <a routerLink="/" class="btn btn-secondary mt-3">Powrót</a>
+</div>

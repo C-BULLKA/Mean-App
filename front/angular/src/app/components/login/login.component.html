@@ -1,0 +1,30 @@
+<section class="form-container">
+  <div class="form-card">
+    <div class="form-header">
+      <h2 class="form-title">Zaloguj się 🔐</h2>
+      <p class="form-subtitle">Wejdź na swoją konto</p>
+    </div>
+
+    <form autocomplete="off" class="login-form">
+      <div class="form-group">
+        <label class="form-label">Email lub Login <span class="required">*</span></label>
+        <input [(ngModel)]="credentials.login" type="text" class="form-input" name="login" placeholder="twoj@email.com lub login">
+      </div>
+
+      <div class="form-group">
+        <label class="form-label">Hasło <span class="required">*</span></label>
+        <input [(ngModel)]="credentials.password" type="password" class="form-input" name="password" placeholder="Twoje hasło">
+      </div>
+
+      @if (loginError) {
+        <div class="alert-error">⚠️ Nieprawidłowy login lub hasło</div>
+      }
+
+      <button (click)="signin()" class="btn-submit" type="button">Zaloguj się</button>
+
+      <p class="form-footer">
+        Nie masz konta? <a routerLink="/signup" class="form-link">Zarejestruj się tutaj</a>
+      </p>
+    </form>
+  </div>
+</section>

@@ -1,0 +1,27 @@
+<div class="comments-section">
+  <h5 class="comments-title">💬 Komentarze</h5>
+
+  <div class="comments-list">
+    @for (c of comments; track c._id) {
+      <div class="comment-item">
+        <div class="comment-header">
+          <strong class="comment-author">{{ c.author }}</strong>
+          <span class="comment-date">{{ c.createdAt | date: 'dd.MM.yyyy HH:mm' }}</span>
+        </div>
+        <p class="comment-text">{{ c.text }}</p>
+        @if (canDeleteComment(c)) {
+          <button class="comment-delete" (click)="deleteComment(c._id)" title="Usuń komentarz">
+            🗑️
+          </button>
+        }
+      </div>
+    } @empty {
+      <p class="no-comments">Brak komentarzy. Bądź pierwszy!</p>
+    }
+  </div>
+
+  <div class="comment-form">
+    <input type="text" class="comment-input" placeholder="Napisz komentarz..." [(ngModel)]="commentText">
+    <button class="comment-submit" type="button" (click)="addComment()">Wyślij</button>
+  </div>
+</div>

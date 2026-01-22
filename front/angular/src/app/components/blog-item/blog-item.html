@@ -1,0 +1,17 @@
+<div class="card h-100 shadow-sm">
+
+  <blog-item-image [image]="image"></blog-item-image>
+
+  <div class="card-body">
+    <h5 class="card-title">{{ title }}</h5>
+
+    <blog-item-text [text]="text" [id]="id"></blog-item-text>
+  </div>
+
+  <div class="card-footer bg-transparent border-top-0">
+    <div class="d-flex justify-content-between align-items-center">
+      <app-like-button [postId]="id || ''"></app-like-button>
+    </div>
+  </div>
+
+</div>
