@@ -4,17 +4,14 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class WordFilterService {
-  // Lista złych słów
+
   private badWords: string[] = [
-    'damn', 'hell', 'crap', 'stupid', 'idiot',
-    'fuck', 'bitch', 'asshole', 'bastard', 'prick',
-    'cholera', 'kurwa', 'pierdol', 'jebany', 'gówno',
-    'piwko',
+    'OKPA','twin', '67', 'szpącić', 'skibidi',
+    'piwko','tuff', 'slay', 'goat','brainrot'
   ];
 
   constructor() {}
 
-  // Sprawdź czy tekst zawiera złe słowa
   hasBadWords(text: string): boolean {
     const lowerText = text.toLowerCase();
     return this.badWords.some(word =>
@@ -22,7 +19,7 @@ export class WordFilterService {
     );
   }
 
-  // Zwróć listę znalezionych złych słów
+
   getBadWordsFound(text: string): string[] {
     const lowerText = text.toLowerCase();
     return this.badWords.filter(word =>
@@ -30,7 +27,6 @@ export class WordFilterService {
     );
   }
 
-  // Zamiast złych słów na asteryki
   censorText(text: string): string {
     let censoredText = text;
     this.badWords.forEach(word => {
