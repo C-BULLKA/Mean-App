@@ -1,14 +1,14 @@
-# 📝 Blog MEAN Stack
+# Blog MEAN Stack
 Aplikacja blogowa zbudowana na stosie technologicznym MEAN (MongoDB, Express, Angular, Node.js).
 
-## 🎯 Wymagania
+## Wymagania
 
 - **Node.js** v18+ (pobierz z [nodejs.org](https://nodejs.org/))
 - **MongoDB** (lokalna instancja lub Atlas MongoDB)
 - **npm** lub **yarn**
 - **Angular CLI** (instalacja: `npm install -g @angular/cli`)
 
-## 🚀 Instalacja i Uruchomienie
+##  Instalacja i Uruchomienie
 
 ### 1. Backend (Express + MongoDB)
 
@@ -58,74 +58,32 @@ Zmień linię:
 const mongoUrl = 'mongodb://localhost:27017/blog'; // Zmień tutaj
 ```
 
-## ✨ Zaimplementowane Funkcjonalności
+## Zaimplementowane Funkcjonalności
 
-### 🔐 Autentykacja
-- ✅ Rejestracja użytkowników z walidacją
-- ✅ Logowanie z tokenami JWT
-- ✅ Wylogowanie i czyszczenie sesji
-- ✅ Ochrona tras (AuthGuard)
-- ✅ Haszowanie haseł (bcryptjs)
-
-### 📰 Zarządzanie Postami
+### Zarządzanie Postami
 - ✅ Tworzenie, odczytywanie, usuwanie postów
 - ✅ Paginacja postów (backend i frontend)
 - ✅ Wyświetlanie liczby wyświetleń posta
 - ✅ Inkrementacja licznika wyświetleń
 
-### ⭐ System Ocen
-- ✅ Gwiazdkowy system ocen (1-5 gwiazdek)
-- ✅ Wyświetlanie średniej oceny
-- ✅ Licznik głosów
-- ✅ Przechowywanie ocen w localStorage
-
-### 🔖 System Zakładek (Bookmarks)
-- ✅ Dodawanie/usuwanie ulubionych postów
-- ✅ Przeglądanie wszystkich zakładek z paginacją
-- ✅ Wskaźnik wizualny zaznaczonego posta
-- ✅ Przechowywanie w bazie danych
+### System Like dla postów
 
 ### 💬 System Komentarzy
 - ✅ Dodawanie komentarzy do postów
 - ✅ Wyświetlanie autora i daty komentarza
 - ✅ Usuwanie własnych komentarzy
 - ✅ Filtr profanacji (słowa zakazane)
-- ✅ Powiadomienie na ekranie o błędnym komentarzu
+- ✅ Powiadomienie na ekranie o zakazanym komentarzu
 
-### 🌓 Tryb Ciemny/Jasny
-- ✅ Przełącznik motywu w nawigacji
-- ✅ Zapamiętywanie preferencji w localStorage
-- ✅ Pełna obsługa CSS Variables dla obu trybów
-- ✅ Płynne przejścia między motywami
 
-### 🎨 Nowoczesny Interfejs
-- ✅ Gradient navbar (indigo → teal)
-- ✅ Nowoczesne karty postów z hover effects
-- ✅ Formularze ze scentrowanym layoutem
-- ✅ Animacje fade-in i slide-in
-- ✅ System notyfikacji (toast notifications)
-- ✅ Responsywny design (mobile-first)
-- ✅ Nowoczesna paleta barw (indigo-500, teal-600)
-
-### 🔔 Powiadomienia
-- ✅ Toast notifications (success, error, warning, info)
-- ✅ Automatyczne zamykanie po 4 sekundach
-- ✅ Ikonki emoji dla różnych typów powiadomień
-- ✅ Pozycja fixed w górnym rogu
-
-### 🔤 Filtr Profanacji
+### Filtr Slangu Młodzieży
 - ✅ Automatyczne wykrywanie słów zakazanych
 - ✅ Powiadomienie dla użytkownika
 - ✅ Konfigurowalny zestaw słów
 - ✅ Integracja z systemem komentarzy
 
-### 📱 Responsive Design
-- ✅ Adaptacja do wszystkich rozmiarów ekranu
-- ✅ Mobile menu (przycisk hamburgera)
-- ✅ Optymalizacja dla tabletów i desktopów
-- ✅ Flexible grid layout
 
-## 📁 Struktura Projektu
+## Struktura Projektu
 
 ```
 project-root/
@@ -167,7 +125,7 @@ project-root/
 └── README.md                        # Ten plik
 ```
 
-## 🔧 Stack Technologiczny
+## Stack Technologiczny
 
 ### Backend
 - **Node.js** - Runtime JavaScript
@@ -188,7 +146,7 @@ project-root/
 - **Angular Router** - Routing aplikacji
 - **Font Awesome** - Biblioteka ikon
 
-## 🔌 API Endpoints
+## API Endpoints
 
 ### Autentykacja
 - `POST /api/user/register` - Rejestracja
@@ -212,7 +170,7 @@ project-root/
 - `GET /api/likes/check/:postId` - Sprawdzenie czy post jest zaznaczony
 - `GET /api/likes/bookmarks/:userId` - Pobranie wszystkich zakładek użytkownika
 
-## 🎓 Podstawowe Operacje
+## Podstawowe Operacje
 
 ### Rejestracja
 1. Przejdź do strony logowania
@@ -242,11 +200,11 @@ project-root/
 2. Kliknij ikonę 🔖 (zakładka)
 3. Przejdź do "Zakładek" aby zobaczyć wszystkie zaznaczone posty
 
-## 🌙 Przełączanie Motywu
+## Przełączanie Motywu
 - Kliknij ikonę słońca/księżyca w górnym prawym rogu
 - Preferencja zostanie zapamiętana
 
-## 🐛 Troubleshooting
+## Troubleshooting
 
 ### Problem: Błąd połączenia z MongoDB
 **Rozwiązanie:** Upewnij się że MongoDB działa lokalnie lub sprawdź URL w `config.ts`
@@ -260,14 +218,3 @@ project-root/
 ### Problem: Gwiazdki nie wyświetlają się
 **Rozwiązanie:** Upewnij się że Font Awesome jest załadowany (sprawdź `src/index.html`)
 
-## 📝 Notatki
-
-- Wszystkie hasła są haszowane za pomocą bcryptjs
-- JWT tokens są przechowywane w localStorage
-- Oceny postów są przechowywane w localStorage (nie w bazie)
-- Komenty są przechowywane w bazie danych MongoDB
-- CSS Variables umożliwiają łatwe zmianę kolorów
-
-**Ostatnia aktualizacja:** 22 stycznia 2026
-
-Miłego testowania! 🚀
