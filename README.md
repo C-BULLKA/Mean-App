@@ -68,7 +68,7 @@ const mongoUrl = 'mongodb://localhost:27017/blog'; // Zmień tutaj
 
 ### System Like dla postów
 
-### 💬 System Komentarzy
+### System Komentarzy
 - ✅ Dodawanie komentarzy do postów
 - ✅ Wyświetlanie autora i daty komentarza
 - ✅ Usuwanie własnych komentarzy
