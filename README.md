@@ -5,7 +5,7 @@ Aplikacja blogowa zbudowana na stosie technologicznym MEAN (MongoDB, Express, An
 
 - **Node.js** v18+ (pobierz z [nodejs.org](https://nodejs.org/))
 - **MongoDB** (lokalna instancja lub Atlas MongoDB)
-- **npm** lub **yarn**
+- **npm**
 - **Angular CLI** (instalacja: `npm install -g @angular/cli`)
 
 ##  Instalacja i Uruchomienie
