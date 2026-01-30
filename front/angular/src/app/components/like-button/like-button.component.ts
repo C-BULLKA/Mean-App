@@ -16,7 +16,7 @@ import { CommonModule } from '@angular/common';
         [disabled]="!isLoggedIn"
         (click)="toggleLike()"
         [title]="!isLoggedIn ? 'Zaloguj się aby dodać do ulubionych' : ''">
-        <span class="bookmark-icon">{{ isLiked ? '✅' : '🔗' }}</span>
+        <span class="bookmark-icon">{{ isLiked ? '❤️' : '♡' }}</span>
       </button>
       <span class="like-count">{{ likeCount }}</span>
     </div>
