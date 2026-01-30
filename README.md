@@ -64,9 +64,15 @@ const mongoUrl = 'mongodb://localhost:27017/blog'; // Zmień tutaj
 Dodana możliwość komentowania postów.
 
 ### Paginacja postów
-Zaimplementuj paginację listy postów.
+Zaimplementowana paginacja listy postów do 5 na stronę wyświetlenie ilości wszystkich stron.
+
+### System polubień (like/unlike)
+Dodana możliwość polubienia postów.
+
 
 ### Filtr Slangu Młodzieży
+Zaimplementowana własna funkcjonalność.
+
 
 ## Struktura Projektu
 
@@ -182,7 +188,7 @@ project-root/
 
 ### Zaznaczenie Posta jako Ulubionego
 1. Otwórz szczegóły posta
-2. Kliknij ikonę 🔖 (zakładka)
+2. Kliknij ikonę serca (zakładka)
 3. Przejdź do "Zakładek" aby zobaczyć wszystkie zaznaczone posty
 
 ## Przełączanie Motywu
