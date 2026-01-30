@@ -60,28 +60,13 @@ const mongoUrl = 'mongodb://localhost:27017/blog'; // Zmień tutaj
 
 ## Zaimplementowane Funkcjonalności
 
-### Zarządzanie Postami
-- ✅ Tworzenie, odczytywanie, usuwanie postów
-- ✅ Paginacja postów (backend i frontend)
-- ✅ Wyświetlanie liczby wyświetleń posta
-- ✅ Inkrementacja licznika wyświetleń
+### System komentarzy
+Dodana możliwość komentowania postów.
 
-### System Like dla postów
-
-### System Komentarzy
-- ✅ Dodawanie komentarzy do postów
-- ✅ Wyświetlanie autora i daty komentarza
-- ✅ Usuwanie własnych komentarzy
-- ✅ Filtr profanacji (słowa zakazane)
-- ✅ Powiadomienie na ekranie o zakazanym komentarzu
-
+### Paginacja postów
+Zaimplementuj paginację listy postów.
 
 ### Filtr Slangu Młodzieży
-- ✅ Automatyczne wykrywanie słów zakazanych
-- ✅ Powiadomienie dla użytkownika
-- ✅ Konfigurowalny zestaw słów
-- ✅ Integracja z systemem komentarzy
-
 
 ## Struktura Projektu
 
